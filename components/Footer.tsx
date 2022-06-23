@@ -1,5 +1,4 @@
 // Framework imports
-import type { NextPage } from "next";
 
 // Dependency imports
 
@@ -13,12 +12,12 @@ import type { NextPage } from "next";
 
 // Style imports
 
-const Home: NextPage = () => {
+const Footer = () => {
   return (
     <>
-      <h1 className="text-xl">Portfolio v3: homepage</h1>
+      <h1 className="text-xl text-emerald-500">Footer component</h1>
     </>
   );
 };
 
-export default Home;
+export default Footer;
