@@ -2,6 +2,7 @@
 import type { AppProps } from "next/app";
 
 // Dependency imports
+import "remixicon/fonts/remixicon.css";
 
 // Type + Interface imports
 

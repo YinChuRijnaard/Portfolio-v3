@@ -19,8 +19,9 @@ const Footer = () => {
     <>
       <h1 className="text-xl text-emerald-500">Footer component</h1>
 
-      <button className="flex items-center border border-black bg-red-500 px-4 py-2">
-        Dark
+      <button className="flex items-center justify-center border border-black px-4 py-2">
+        <i className="ri-moon-fill ri-xl mx-1"></i>
+        <span className="mx-1">Dark</span>
       </button>
     </>
   );
