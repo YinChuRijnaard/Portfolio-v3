@@ -10,6 +10,8 @@
 
 // Component imports
 
+// Asset imports
+
 // Style imports
 
 const Navbar = () => {

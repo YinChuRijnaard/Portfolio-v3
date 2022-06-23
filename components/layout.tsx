@@ -12,6 +12,8 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
+// Asset imports
+
 // Style imports
 
 type LayoutProps = {

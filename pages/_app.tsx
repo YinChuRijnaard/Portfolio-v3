@@ -12,6 +12,8 @@ import type { AppProps } from "next/app";
 // Component imports
 import Layout from "../components/layout";
 
+// Asset imports
+
 // Style imports
 import "../styles/globals.css";
 

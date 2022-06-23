@@ -11,6 +11,8 @@ import type { NextPage } from "next";
 
 // Component imports
 
+// Asset imports
+
 // Style imports
 
 const Home: NextPage = () => {
