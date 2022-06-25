@@ -1,7 +1,8 @@
 // Framework imports
-import React from "react";
+import { useState } from "react";
+
 // Dependency imports
-// import { useDarkMode } from "usehooks-ts";
+import { useTheme } from "next-themes";
 
 // Type + Interface imports
 
@@ -16,30 +17,36 @@ import React from "react";
 // Style imports
 
 const Footer = () => {
-  // const { isDarkMode, toggle, enable, disable } = useDarkMode();
+  const [darkMode, setDarkMode] = useState(false);
+  const { systemTheme, theme, setTheme } = useTheme();
+
+  const handleClick = () => {
+    const currentTheme = theme === "system" ? systemTheme : theme;
+
+    if (currentTheme === "dark") {
+      setTheme("light");
+      setDarkMode(false);
+    } else {
+      setTheme("dark");
+      setDarkMode(true);
+    }
+  };
 
   return (
     <>
-      <h1 className="text-xl text-emerald-500">Footer component</h1>
+      <h1 className="text-xl text-blue-500">Footer component</h1>
 
-      {/* <p>Current theme: {isDarkMode ? "dark" : "light"}</p> */}
-
-      {/* <button
-        className="flex items-center justify-center border border-green-500 px-4 py-2 dark:border-red-500"
-        onClick={toggle}
-      >
-        {isDarkMode ? (
-          <>
-            <i className="ri-sun-fill ri-xl mx-1"></i>
-            <span className="mx-1">Light</span>
-          </>
+      <button onClick={handleClick}>
+        {darkMode ? (
+          <span className="flex items-center border border-white px-4 py-2">
+            <i className="ri-sun-fill mr-2"></i>Light
+          </span>
         ) : (
-          <>
-            <i className="ri-moon-fill ri-xl mx-1"></i>
-            <span className="mx-1">Dark</span>
-          </>
+          <span className="flex items-center border border-black px-4 py-2">
+            <i className="ri-moon-fill mr-2"></i>Dark
+          </span>
         )}
-      </button> */}
+      </button>
     </>
   );
 };

@@ -2,6 +2,7 @@
 import type { AppProps } from "next/app";
 
 // Dependency imports
+import { ThemeProvider } from "next-themes";
 import "remixicon/fonts/remixicon.css";
 
 // Type + Interface imports
@@ -20,9 +21,11 @@ import "../styles/globals.css";
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ThemeProvider attribute="class">
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
   );
 };
 
