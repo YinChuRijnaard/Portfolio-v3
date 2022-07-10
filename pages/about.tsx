@@ -1,19 +1,3 @@
-// Framework imports
-
-// Dependency imports
-
-// Type + Interface imports
-
-// Context imports
-
-// Util imports
-
-// Component imports
-
-// Asset imports
-
-// Style imports
-
 const About = () => {
   return (
     <div>

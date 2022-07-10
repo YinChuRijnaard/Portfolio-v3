@@ -4,20 +4,8 @@ import { useState } from "react";
 // Dependency imports
 import { useTheme } from "next-themes";
 
-// Type + Interface imports
-
-// Context imports
-
-// Util imports
-
-// Component imports
-
-// Asset imports
-
-// Style imports
-
 const Footer = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState<boolean>(false);
   const { systemTheme, theme, setTheme } = useTheme();
 
   const handleClick = () => {

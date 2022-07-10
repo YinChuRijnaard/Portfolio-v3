@@ -5,16 +5,8 @@ import type { AppProps } from "next/app";
 import { ThemeProvider } from "next-themes";
 import "remixicon/fonts/remixicon.css";
 
-// Type + Interface imports
-
-// Context imports
-
-// Util imports
-
 // Component imports
 import Layout from "../components/layout";
-
-// Asset imports
 
 // Style imports
 import "../styles/globals.css";
@@ -30,3 +22,14 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 };
 
 export default MyApp;
+
+// Framework imports
+// Dependency imports
+// Type + Interface imports
+// Context + Store imports
+// Hook imports
+// Util imports
+// Data imports
+// Component imports
+// Asset imports
+// Style imports
