@@ -41,7 +41,7 @@ const Footer = () => {
   // Find out why Prettier doesn't sort my Tailwind classes!!!
 
   return (
-    <footer className="space-y-8 p-2">
+    <footer className="space-y-4 p-2 mt-2">
       <div className="flex justify-evenly">{footerDataMapped}</div>
 
       <div className="flex justify-center items-center">
