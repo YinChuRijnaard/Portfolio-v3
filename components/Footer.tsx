@@ -29,7 +29,7 @@ const Footer = () => {
   const footerDataMapped = footerData.map((item) => {
     return (
       <a
-        className="hover:text-red-600 dark:hover:text-red-600 dark:text-neutral-100 duration-300 text-neutral-900"
+        className="hover:text-red-600 dark:hover:text-red-600 duration-300"
         href={item.href}
         target="_blank"
         rel="noreferrer">
@@ -45,7 +45,7 @@ const Footer = () => {
       <div className="flex justify-evenly">{footerDataMapped}</div>
 
       <div className="flex justify-center items-center">
-        <button className="text-neutral-900 dark:text-neutral-100" onClick={handleClick}>
+        <button onClick={handleClick}>
           {darkMode ? <i className="ri-sun-line ri-lg"></i> : <i className="ri-moon-line ri-lg"></i>}
         </button>
       </div>
