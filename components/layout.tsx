@@ -1,5 +1,6 @@
 // Component imports
 import Navbar from "../components/Navbar";
+import Flag from "../components/Flag";
 import Footer from "../components/Footer";
 
 type LayoutProps = {
@@ -11,6 +12,7 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <Navbar />
       <main>{children}</main>
+      <Flag />
       <Footer />
     </>
   );

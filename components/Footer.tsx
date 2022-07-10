@@ -4,9 +4,15 @@ import { useState } from "react";
 // Dependency imports
 import { useTheme } from "next-themes";
 
+// Data imports
+import { footerData } from "../data/footerData";
+
 const Footer = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
+
   const { systemTheme, theme, setTheme } = useTheme();
+
+  const currentYear: number = new Date().getFullYear();
 
   const handleClick = () => {
     const currentTheme = theme === "system" ? systemTheme : theme;
@@ -20,22 +26,32 @@ const Footer = () => {
     }
   };
 
-  return (
-    <>
-      <h1 className="text-xl text-blue-500">Footer component</h1>
+  const footerDataMapped = footerData.map((item) => {
+    return (
+      <a
+        className="hover:text-red-600 dark:hover:text-red-600 dark:text-neutral-100 duration-300 text-neutral-900"
+        href={item.href}
+        target="_blank"
+        rel="noreferrer">
+        <i className={item.iClassName}></i>
+      </a>
+    );
+  });
 
-      <button onClick={handleClick}>
-        {darkMode ? (
-          <span className="flex items-center border border-white px-4 py-2">
-            <i className="ri-sun-fill mr-2"></i>Light
-          </span>
-        ) : (
-          <span className="flex items-center border border-black px-4 py-2">
-            <i className="ri-moon-fill mr-2"></i>Dark
-          </span>
-        )}
-      </button>
-    </>
+  // Find out why Prettier doesn't sort my Tailwind classes!!!
+
+  return (
+    <footer className="space-y-8 p-2">
+      <div className="flex justify-evenly">{footerDataMapped}</div>
+
+      <div className="flex justify-center items-center">
+        <button className="text-neutral-900 dark:text-neutral-100" onClick={handleClick}>
+          {darkMode ? <i className="ri-sun-line ri-lg"></i> : <i className="ri-moon-line ri-lg"></i>}
+        </button>
+      </div>
+
+      <p className="text-xs text-center">&copy;&nbsp;{currentYear}</p>
+    </footer>
   );
 };
 
