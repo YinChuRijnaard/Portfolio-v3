@@ -3,6 +3,7 @@ import { useState } from "react";
 
 // Dependency imports
 import { useTheme } from "next-themes";
+import { nanoid } from "nanoid";
 
 // Data imports
 import { footerData } from "../data/footerData";
@@ -29,6 +30,7 @@ const Footer = () => {
   const footerDataMapped = footerData.map((item) => {
     return (
       <a
+        key={nanoid()}
         className="hover:text-red-600 dark:hover:text-red-600 duration-300"
         href={item.href}
         target="_blank"
