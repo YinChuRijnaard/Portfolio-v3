@@ -9,7 +9,7 @@ import Button from "../components/Button";
 
 const Home: NextPage = () => {
   return (
-    <main className="h-screen mx-4 mb-96 font-serif space-y-8 p-2">
+    <main className="h-screen mx-2 font-serif space-y-16 p-2">
       {/* <ScrollToTop color="#dc2626" smooth /> */}
 
       <h1 className="text-6xl">Hi 👋🏼</h1>
@@ -28,5 +28,7 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+// Fix viewing on desktop
 
 // Styling === basis for other pages!
