@@ -31,7 +31,7 @@ const Footer = () => {
     return (
       <a
         key={nanoid()}
-        className="duration-300 hover:text-red-600 dark:hover:text-red-600"
+        className="duration-300 lg:hover:text-red-600 lg:dark:hover:text-red-600"
         href={item.href}
         target="_blank"
         rel="noreferrer">

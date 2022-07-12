@@ -1,5 +1,6 @@
 // Framework imports
 import { useState } from "react";
+import Link from "next/link";
 
 // Dependency imports
 import { Squeeze as Hamburger } from "hamburger-react";
@@ -13,18 +14,26 @@ const Navbar = () => {
 
   const handleOpen = () => setOpen(!open);
 
+  const handleCloseViaLink = () => setOpen(!open);
+
+  const handleCloseViaLogo = () => setOpen(false);
+
   return (
     <>
       <nav className="mx-4 flex items-center justify-between md:mx-32 lg:mx-64">
-        <Logo />
+        <Link href="/">
+          <a onClick={handleCloseViaLogo}>
+            <Logo />
+          </a>
+        </Link>
 
         <button onClick={handleOpen}>
-          <Hamburger distance="lg" color="#dc2626" label="Show menu" rounded />
+          <Hamburger toggled={open} toggle={setOpen} distance="lg" color="#dc2626" label="Show menu" rounded />
           {/* color: red-500 */}
         </button>
       </nav>
 
-      {open ? <Menu /> : null}
+      {open ? <Menu handleCloseViaLink={handleCloseViaLink} /> : null}
     </>
   );
 };
