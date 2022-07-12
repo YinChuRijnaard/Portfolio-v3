@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 
       <p className="text-lg italic opacity-[0.625]">Passionate • Dedicated • Dependable</p>
 
-      <div className="flex justify-start">
+      <div className="flex justify-start text-lg">
         <Button
           href={"https://cv-yin-chu-rijnaard.vercel.app/"}
           text={"View my resume"}
@@ -31,6 +31,6 @@ export default Home;
 // Styling === basis for other pages!
 
 /*
-Pages: mx-4 + p-4 + mt-8 + space-y-16/8/4 LG: lg:mx-64 + lg:mt-16
-Navbar: mx-4 LG: lg:mx-64
+Pages: mx-4 mt-8 space-y-16/8/4 p-4 LG: md:mx-32 md:mt-16 lg:mx-64
+Navbar: mx-4 LG: md:mx-32 lg:mx-64
 */
