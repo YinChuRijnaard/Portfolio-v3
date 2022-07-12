@@ -6,7 +6,7 @@ import Button from "../components/Button";
 
 const Home: NextPage = () => {
   return (
-    <main className="h-full mx-4 mt-8 p-4 font-serif space-y-16">
+    <main className="h-screen mx-4 mt-8 p-4 font-serif space-y-16">
       <h1 className="text-6xl">Nice to meet ya 👋🏼</h1>
 
       <p className="text-3xl opacity-75 leading-normal">
