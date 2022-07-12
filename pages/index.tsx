@@ -1,21 +1,12 @@
 // Framework imports
 import type { NextPage } from "next";
 
-// Dependency imports
-import ScrollToTop from "react-scroll-to-top";
-
 // Component imports
 import Button from "../components/Button";
 
 const Home: NextPage = () => {
   return (
     <main className="h-full mx-4 mt-8 p-4 font-serif space-y-16">
-      {/* <ScrollToTop
-        style={{ background: "none", display: "flex", justifyContent: "center", alignItems: "center" }}
-        color="#dc2626"
-        smooth
-      /> */}
-
       <h1 className="text-6xl">Nice to meet ya 👋🏼</h1>
 
       <p className="text-3xl opacity-75 leading-normal">
@@ -41,8 +32,7 @@ export default Home;
 
 /*
 NORMAL
-  Everything
-    - mx-4 + p-4 + mt-8
-    - Navbar: mx-4
-    - Footer: mx-4 + p-4
+  - Everything: mx-4 + p-4 + mt-8 + space-y-16/8/4
+  - Navbar: mx-4
+  - Footer: mt-16 p-8
 */
