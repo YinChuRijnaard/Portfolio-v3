@@ -4,7 +4,7 @@ import Link from "next/link";
 const Menu = () => {
   return (
     <main className="absolute z-10 h-screen w-screen rounded bg-neutral-100 p-32 font-serif dark:bg-neutral-900">
-      <ul className="space-y-16 text-center text-6xl">
+      <ul className="space-y-16 text-center text-4xl">
         <li>
           <Link href="/about">
             <a>About</a>
