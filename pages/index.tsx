@@ -10,23 +10,19 @@ import Button from "../components/Button";
 const Home: NextPage = () => {
   return (
     <main className="h-full mx-4 mt-8 p-4 font-serif space-y-16">
-      <ScrollToTop
+      {/* <ScrollToTop
         style={{ background: "none", display: "flex", justifyContent: "center", alignItems: "center" }}
         color="#dc2626"
         smooth
-      />
+      /> */}
 
-      <h1 className="text-6xl">Hi 👋🏼</h1>
+      <h1 className="text-6xl">Nice to meet ya 👋🏼</h1>
 
-      <p className="text-3xl opacity-75">I&apos;m Yin Chu Rijnaard. A frontend web developer from the Netherlands.</p>
+      <p className="text-3xl opacity-75 leading-normal">
+        I&apos;m Yin Chu Rijnaard. A frontend web developer from the Netherlands<span className="text-red-600">.</span>
+      </p>
 
-      <p className="text-lg opacity-[0.625] italic">Passionate&nbsp;•&nbsp;Dedicated&nbsp;•&nbsp;Dependable</p>
-
-      {/* <ul className="list-disc text-lg italic opacity-[0.625] ml-4">
-        <li>Passionate</li>
-        <li>Dedicated</li>
-        <li>Dependable</li>
-      </ul> */}
+      <p className="text-lg opacity-[0.625] italic">Passionate • Dedicated • Dependable</p>
 
       <div className="flex justify-start">
         <Button
