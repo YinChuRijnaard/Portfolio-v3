@@ -6,7 +6,7 @@ import Logo from "./Logo";
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between mx-4">
+    <nav className="mx-4 flex items-center justify-between">
       <Logo />
 
       <Hamburger distance="lg" color="#dc2626" label="Show menu" rounded />

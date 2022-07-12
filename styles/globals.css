@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply overflow-x-hidden text-base font-sans select-none bg-neutral-100 text-neutral-900 dark:text-neutral-100 dark:bg-neutral-900;
+    @apply select-none overflow-x-hidden bg-neutral-100 font-sans text-base text-neutral-900 dark:bg-neutral-900 dark:text-neutral-100;
   }
 }

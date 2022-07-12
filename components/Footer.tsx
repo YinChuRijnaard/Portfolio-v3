@@ -31,7 +31,7 @@ const Footer = () => {
     return (
       <a
         key={nanoid()}
-        className="hover:text-red-600 dark:hover:text-red-600 duration-300"
+        className="duration-300 hover:text-red-600 dark:hover:text-red-600"
         href={item.href}
         target="_blank"
         rel="noreferrer">
@@ -40,19 +40,17 @@ const Footer = () => {
     );
   });
 
-  // Find out why Prettier doesn't sort my Tailwind classes!!!
-
   return (
-    <footer className="space-y-4 border-t dark:border-neutral-800 border-neutral-200 p-8">
+    <footer className="space-y-4 border-t border-neutral-200 p-8 dark:border-neutral-800">
       <div className="flex justify-evenly">{footerDataMapped}</div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex items-center justify-center">
         <button onClick={handleClick}>
           {darkMode ? <i className="ri-sun-line ri-lg"></i> : <i className="ri-moon-line ri-lg"></i>}
         </button>
       </div>
 
-      <p className="text-xs text-center">&copy;&nbsp;{currentYear}</p>
+      <p className="text-center text-xs">&copy;&nbsp;{currentYear}</p>
     </footer>
   );
 };
