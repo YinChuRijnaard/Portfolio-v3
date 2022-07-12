@@ -6,7 +6,7 @@ import Button from "../components/Button";
 
 const Home: NextPage = () => {
   return (
-    <main className="mx-4 mt-8 h-screen space-y-16 p-4 font-serif">
+    <main className="mx-4 mt-8 h-screen space-y-16 p-4 font-serif md:mx-32 md:mt-16 lg:mx-64">
       <h1 className="text-6xl">Nice to meet ya 👋🏼</h1>
 
       <p className="text-3xl leading-normal opacity-75">
@@ -31,8 +31,6 @@ export default Home;
 // Styling === basis for other pages!
 
 /*
-NORMAL
-  - Everything: mx-4 + p-4 + mt-8 + space-y-16/8/4
-  - Navbar: mx-4
-  - Footer: mt-16 p-8
+Pages: mx-4 + p-4 + mt-8 + space-y-16/8/4 LG: lg:mx-64 + lg:mt-16
+Navbar: mx-4 LG: lg:mx-64
 */
