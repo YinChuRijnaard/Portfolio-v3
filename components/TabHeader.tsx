@@ -15,7 +15,7 @@ const TabHeader = (props: TabHeaderProps) => {
         {({ selected }) => (
           <button
             className={
-              selected ? "underline decoration-neutral-800 underline-offset-4 dark:decoration-neutral-200" : ""
+              selected ? "underline decoration-neutral-800 underline-offset-8 dark:decoration-neutral-200" : ""
             }>
             {props.emoji}
           </button>

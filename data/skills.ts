@@ -1,0 +1,18 @@
+export const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Firebase",
+  "Tailwind CSS",
+  "styled-components",
+  "Sass",
+  "Chakra UI",
+  "Headless UI",
+  "Material UI",
+  "Git",
+  "npm",
+  "yarn",
+];
