@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 
 // Component imports
 import Button from "../components/Button";
+import TypeformForm from "../components/TypeformForm";
 import ContactForm from "../components/ContactForm";
 
 const Contact: NextPage = () => {
@@ -12,7 +13,9 @@ const Contact: NextPage = () => {
         Contact<span className="text-red-600">.</span>
       </h1>
 
-      <ContactForm />
+      <TypeformForm />
+
+      {/* <ContactForm /> */}
 
       <hr className="border-neutral-300 dark:border-neutral-700" />
 
