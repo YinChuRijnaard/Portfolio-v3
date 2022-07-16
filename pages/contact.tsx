@@ -4,7 +4,6 @@ import type { NextPage } from "next";
 // Component imports
 import Button from "../components/Button";
 import TypeformForm from "../components/TypeformForm";
-import ContactForm from "../components/ContactForm";
 
 const Contact: NextPage = () => {
   return (
@@ -13,17 +12,17 @@ const Contact: NextPage = () => {
         Contact<span className="text-red-600">.</span>
       </h1>
 
-      <TypeformForm />
+      <p className="">Click on the sidetab to fill out the contact form :&#41;</p>
 
-      {/* <ContactForm /> */}
+      <hr className="w-1/2 border-neutral-300 dark:border-neutral-700" />
 
-      <hr className="border-neutral-300 dark:border-neutral-700" />
+      <p className="">Prefer to have a chat instead?</p>
 
-      <p className="text-center">Prefer to have a chat instead?</p>
-
-      <div className="flex justify-center">
+      <div className="flex justify-start">
         <Button href={"tel:+31618058625"} text={"Call me"} iClassName={"ri-phone-line ml-1"} />
       </div>
+
+      <TypeformForm />
     </main>
   );
 };
